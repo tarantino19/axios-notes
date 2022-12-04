@@ -8,7 +8,7 @@ const FirstRequest = () => {
 
 const [items, setItems] = useState ([])
 
-  const fetchData = async (params) => {
+  const fetchData = async () => {
     try {
       const response = await axios.get (url);
       const items = response.data;
